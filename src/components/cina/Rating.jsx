@@ -1,0 +1,11 @@
+import starIcon from "../../assets/star.svg";
+export default function Rating({ value }) {
+  const stars = Array(value).fill(starIcon);
+  return (
+    <>
+      {stars.map((star, index) => (
+        <img key={index} src={star} alt="star" width="14" height="14" />
+      ))}
+    </>
+  );
+}
