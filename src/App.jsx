@@ -1,10 +1,16 @@
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import SideBar from "./components/SideBar";
 
 function App() {
   return (
     <>
       <Header />
+      <main>
+        <div class="container mx-auto grid lg:grid-cols-[218px_1fr] gap-14">
+          <SideBar />
+        </div>
+      </main>
       <Footer />
     </>
   );
